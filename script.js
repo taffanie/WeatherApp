@@ -5,8 +5,8 @@ let fahrenheit = false; //toggle that will be switched on or off
 let weatherdata; 
 
 function displayTemp(cTemp, f){
-  if(f) return Math.round((cTemp * 9/5) + 32) + " °F";
-  return Math.round(cTemp) + " °C"; 
+  if(f) return ((cTemp * 9/5) + 32).toFixed(1) + " °F";
+  return (cTemp).toFixed(1) + " °C"; 
 }
 
 function render(weatherdata, fahrenheit){
